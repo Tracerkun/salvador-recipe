@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ77P70ljcw_4j3CkHB0nI6bvmrR7gztUKC0Q&s" type="image/png">
+<title>Recipes</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fffdf9;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+header{
+    background:linear-gradient(to right,#8b4513,#d2691e);
+    color:white;
+    padding:30px 0;
+    text-align:center;
+}
+
+.logo{
+    font-family:'Dancing Script',cursive;
+    font-size:3.5rem;
+}
+
+.tagline{
+    font-weight:300;
+}
+
+nav{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav-links{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:15px 0;
+}
+
+.nav-links li{
+    margin:0 15px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#8b4513;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    background:#f5deb3;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.recipe-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    margin:40px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.recipe-title{
+    font-family:'Dancing Script',cursive;
+    font-size:2.5rem;
+    color:#8b4513;
+    border-bottom:3px solid #f5deb3;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#fff9f0;
+    color:#654321;
+    padding:12px;
+    text-align:left;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+details{
+    margin-top:20px;
+    background:#fff9f0;
+    padding:15px;
+    border-radius:10px;
+}
+
+summary{
+    font-weight:600;
+    cursor:pointer;
+    color:#8b4513;
+    font-size:1.1rem;
+}
+
+.cooking-info{
+    display:flex;
+    justify-content:space-around;
+    background:#fff9f0;
+    padding:20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.info-value{
+    font-size:2rem;
+    font-weight:bold;
+    color:#8b4513;
+}
+
+.recipe-images img{
+    width:100%;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.contact-form{
+    max-width:500px;
+}
+
+.contact-form label{
+    font-weight:600;
+    display:block;
+    margin:15px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:120px;
+}
+
+.contact-form button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#8b4513;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #eee;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<h1 class="logo">Simple Recipes</h1>
+<p class="tagline">Delicious home cooking made easy</p>
+</div>
+</header>
+
+<nav>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#main1">Main Dishes</a></li>
+<li><a href="#dessert1">Desserts</a></li>
+<li><a href="#drink1">Drinks</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</nav>
+
+<main class="container">
+
+<section id="home" class="recipe-card">
+<h2 class="recipe-title">Welcome</h2>
+<p>Welcome to Simple Recipes — a collection of easy, affordable, and delicious
+Filipino-style dishes. This website is designed to help students and families
+prepare home-cooked meals using simple ingredients and easy-to-follow steps.</p>
+</section>
+
+<section id="main1" class="recipe-card">
+<h2 class="recipe-title">Classic Pinoy-Style Carbonara</h2>
+
+<div class="recipe-images">
+<img src="https://assets.unileversolutions.com/v1/79956544.jpg" alt="Carbonara">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">10m</div>Prep</div>
+<div><div class="info-value">30m</div>Cook</div>
+<div><div class="info-value">4</div>Servings</div>
+</div>
+
+<details name="carbonara">
+<summary>Ingredients</summary>
+<table>
+<tr><th>Ingredient</th><th>Quantity</th></tr>
+<tr><td>Spaghetti</td><td>300g</td></tr>
+<tr><td>Bacon</td><td>12 strips</td></tr>
+<tr><td>Butter</td><td>1 tbsp</td></tr>
+<tr><td>Garlic</td><td>2 cloves</td></tr>
+<tr><td>Mushrooms</td><td>½ cup</td></tr>
+<tr><td>Flour</td><td>¼ cup</td></tr>
+<tr><td>Cream of Mushroom</td><td>1 pack</td></tr>
+<tr><td>All-purpose cream</td><td>1 cup</td></tr>
+</table>
+</details>
+
+<details name="carbonara">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>Cook pasta. Drain and set aside.</td></tr>
+<tr><td>2</td><td>Cook bacon until crispy.</td></tr>
+<tr><td>3</td><td>Sauté garlic, add mushrooms and flour.</td></tr>
+<tr><td>4</td><td>Add soup and simmer.</td></tr>
+<tr><td>5</td><td>Add cream and pasta.</td></tr>
+<tr><td>6</td><td>Top with bacon and serve.</td></tr>
+</table>
+</details>
+</section>
+
+<section class="recipe-card">
+<h2 class="recipe-title">Chicken Adobo</h2>
+
+<div class="recipe-images">
+<img src="https://assets.unileversolutions.com/recipes-v3/214369-default.jpg?im=AspectCrop=(718,401);Resize=(718,401)" alt="chicken adobo">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">15m</div>Prep</div>
+<div><div class="info-value">30m</div>Cook</div>
+<div><div class="info-value">4</div>Servings</div>
+</div>
+
+<details name="main2">
+<summary>Ingredients</summary>
+<table>
+<tr><th>Ingredient</th><th>Quantity</th></tr>
+<tr><td>Canola oil</td><td>2 tbsp</td></tr>
+<tr><td>Crushed garlic</td><td>6 cloves</td></tr>
+<tr><td>Sliced onion</td><td>1</td></tr>
+<tr><td>Chicken</td><td>1 kg</td></tr>
+<tr><td>Vinegar</td><td>2 tbsp</td></tr>
+<tr><td>Soy sauce</td><td>¼ cup</td></tr>
+<tr><td>Water</td><td>1 cup</td></tr>
+<tr><td>Whole black peppercorns</td><td>1 tbsp</td></tr>
+<tr><td>Chicken cubes</td><td>2</td></tr>
+<tr><td>brown sugar</td><td>2 tbsp</td></tr>
+<tr><td>Bay leaves</td><td>2</td></tr>
+</table>
+</details>
+
+<details name="main2">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>Heat oil in pan and sauté garlic and onions. Then add chicken to the pan and sear on all sides,
+     until you have a little browning in the chicken skin.</td></tr>
+<tr><td>2</td><td>Pour in vinegar, soy sauce and water. Add bay leaves, pepper and Knorr Chicken Cubes.
+     Bring to a boil over high heat then reduce heat to simmer, but do not cover the pan. Continue to simmer for 10 mins.</td></tr>
+<tr><td>3</td><td>Remove chicken pieces from sauce and fry in another pan until nicely browned.</td></tr>
+<tr><td>4</td><td>Put back fried chicken pieces into sauce. Add sugar and let simmer again for another 10 minutes or until sauce has thickened. Serve warm.</td></tr>
+</table>
+</details>
+</section>
+
+<section id="dessert1" class="recipe-card">
+<h2 class="recipe-title">Mango Graham</h2>
+
+<div class="recipe-images">
+<img src="https://www.nestlegoodnes.com/ph/sites/default/files/styles/1_1_768px_width/public/srh_recipes/2d3bb5cc45ab61a34de6881d9a7aca5c.png.webp" alt="Mango Graham">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">10m</div>Prep</div>
+<div><div class="info-value">30</div>Freeze</div>
+<div><div class="info-value">1</div>Tub</div>
+</div>
+
+<details name="mango">
+<summary>Ingredients</summary>
+<table>
+<tr><td>All-purpose cream</td><td>1 pack</td></tr>
+<tr><td>Condensed milk</td><td>½ cup</td></tr>
+<tr><td>Graham crackers</td><td>24 pcs</td></tr>
+<tr><td>Mangoes</td><td>2 cups</td></tr>
+</table>
+</details>
+
+<details name="mango">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>Mix cream and milk.</td></tr>
+<tr><td>2</td><td>Layer graham, cream, mango.</td></tr>
+<tr><td>3</td><td>Repeat layers.</td></tr>
+<tr><td>4</td><td>Chill before serving.</td></tr>
+</table>
+</details>
+</section>
+
+<section class="recipe-card">
+<h2 class="recipe-title">Buko Salad</h2>
+
+<div class="recipe-images">
+<img src="https://panlasangpinoy.com/wp-content/uploads/2014/11/Buko-Salad1.jpg" alt="buko salad">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">20m</div>Prep</div>
+<div><div class="info-value">1hr</div>Fridge</div>
+<div><div class="info-value">1</div>Tub</div>
+</div>
+
+<details name="dessert2">
+<summary>Ingredients</summary>
+<table>
+    <tr><td>Fruit cocktail</td><td>1</td></tr>
+    <tr><td>Nata de coco</td><td>1</td></tr>
+    <tr><td>Mixed tropical fruit</td><td>1 can</td></tr>
+    <tr><td>Cut corn kernels or creamed corn</td><td>1</td></tr>
+    <tr><td>Cubed cheese</td><td>1/2 cup</td></tr>
+    <tr><td>Condensed milk</td><td>1 cup</td></tr>
+    <tr><td>All purpose cream</td><td>1 cup</td></tr>
+    <tr><td>Shredded buko</td><td>3 cups</td></tr>
+</table>
+</details>
+
+<details name="dessert2">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>In a mixing bowl, combine all fruits</td></tr>
+<tr><td>2</td><td>Add sweetend condesed milk and all purpose cream.</td></tr>
+<tr><td>3</td><td>Mix until all the ingredients are properly distributed.</td></tr>
+<tr><td>4</td><td>Refrigerate for at least 4 hours or place in the freezer for 1 hour before serving</td></tr>
+</table>
+</details>
+</section>
+
+<section id="drink1" class="recipe-card">
+<h2 class="recipe-title">Calamansi Juice</h2>
+
+<div class="recipe-images">
+<img src="https://www.kawalingpinoy.com/wp-content/uploads/2013/05/calamansi-juice.jpg" alt="Calamansi Juice">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">10m</div>Prep</div>
+<div><div class="info-value">0m</div>Cook</div>
+<div><div class="info-value">6-8</div>Glasses</div>
+</div>
+
+<details name="drink1">
+<summary>Ingredients</summary>
+<table>
+<tr><th>Ingredient</th><th>Quantity</th></tr>
+<tr><td>Calamansi</td><td>10–12 pcs</td></tr>
+<tr><td>Water</td><td>4 cups</td></tr>
+<tr><td>Sugar</td><td>½ cup</td></tr>
+<tr><td>Ice cubes</td><td>As needed</td></tr>
+</table>
+</details>
+
+<details name="drink1">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>Squeeze calamansi and remove seeds.</td></tr>
+<tr><td>2</td><td>Mix juice, water, and sugar until dissolved.</td></tr>
+<tr><td>3</td><td>Add ice cubes.</td></tr>
+<tr><td>4</td><td>Serve chilled.</td></tr>
+</table>
+</details>
+</section>
+
+
+<section class="recipe-card">
+<h2 class="recipe-title">Sago’t Gulaman</h2>
+
+<div class="recipe-images">
+<img src="https://panlasangpinoy.com/wp-content/uploads/2011/10/Sago-at-Gulaman.jpg" alt="Sagot Gulaman">
+</div>
+
+<div class="cooking-info">
+<div><div class="info-value">15m</div>Prep</div>
+<div><div class="info-value">20m</div>Cook</div>
+<div><div class="info-value">6-8</div>Glasses</div>
+</div>
+
+<details name="drink2">
+<summary>Ingredients</summary>
+<table>
+<tr><th>Ingredient</th><th>Quantity</th></tr>
+<tr><td>Small sago (tapioca pearls)</td><td>½ cup</td></tr>
+<tr><td>Gulaman (agar)</td><td>1 pack</td></tr>
+<tr><td>Brown sugar</td><td>1 cup</td></tr>
+<tr><td>Water</td><td>6 cups</td></tr>
+<tr><td>Vanilla (optional)</td><td>½ tsp</td></tr>
+<tr><td>Ice cubes</td><td>As needed</td></tr>
+</table>
+</details>
+
+<details name="drink2">
+<summary>Procedure</summary>
+<table>
+<tr><td>1</td><td>Cook sago until transparent, then drain.</td></tr>
+<tr><td>2</td><td>Prepare gulaman according to package, cool and cube.</td></tr>
+<tr><td>3</td><td>Boil water and brown sugar to make syrup.</td></tr>
+<tr><td>4</td><td>Combine syrup, sago, and gulaman.</td></tr>
+<tr><td>5</td><td>Add ice and serve cold.</td></tr>
+</table>
+</details>
+</section>
+
+
+<section id="contact" class="recipe-card">
+<h2 class="recipe-title">Contact Us</h2>
+
+<form class="contact-form">
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Message</label>
+<textarea placeholder="Write your message here..." required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+<p>All Rights Reserved © 2026| Created by Alex Salvador</p>
+</footer>
+
+</body>
+</html>
