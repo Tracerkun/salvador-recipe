@@ -145,7 +145,7 @@ summary{
     max-width:500px;
 }
 
-.contact-form label{
+.contact-form input{
     font-weight:600;
     display:block;
     margin:15px 0 5px;
@@ -447,17 +447,16 @@ prepare home-cooked meals using simple ingredients and easy-to-follow steps.</p>
 <section id="contact" class="recipe-card">
 <h2 class="recipe-title">Contact Us</h2>
 
-<form class="contact-form">
-<label>Name</label>
-<input type="text" placeholder="Enter your name" required>
-
-<label>Email</label>
-<input type="email" placeholder="Enter your email" required>
-
-<label>Message</label>
-<textarea placeholder="Write your message here..." required></textarea>
-
-<button type="submit">Send Message</button>
+<form class="contact-form" action="https://formsubmit.co/yourgmail@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    
+    <input type="email" name="email" placeholder="Enter your email" required>
+    
+    <textarea name="message" placeholder="Enter your message" required></textarea>
+    
+    <input type="hidden" name="_captcha" value="false">
+    
+    <button type="submit">Send Message</button>
 </form>
 </section>
 
